@@ -18,7 +18,7 @@ output is in German, like the rest of CheckCourt.
 Requires Node.js 20 or later.
 
 ```bash
-npm install -g github:CheckCourt/cli
+npm install -g https://github.com/CheckCourt/cli/archive/refs/tags/v0.1.2.tar.gz
 checkcourt help
 ```
 
