@@ -18,11 +18,12 @@ output is in German, like the rest of CheckCourt.
 Requires Node.js 20 or later.
 
 ```bash
-npm install -g https://github.com/CheckCourt/cli/archive/refs/tags/v0.1.2.tar.gz
+npm install -g @checkcourt/cli
 checkcourt help
 ```
 
-The release ships its compiled build, so nothing is compiled on install. A release on npm as `@checkcourt/cli` is planned.
+To run it without a global install, use `npx @checkcourt/cli help`. Every release is also
+tagged on [GitHub](https://github.com/CheckCourt/cli/releases).
 
 ## App development
 
@@ -145,6 +146,16 @@ node dist/index.js help
 ```
 
 `npm run dev -- <command>` runs the CLI from source without a build.
+
+### Releasing
+
+1. Bump `version` in `package.json` (`npm version <x.y.z> --no-git-tag-version`).
+2. Add the release to `CHANGELOG.md`.
+3. Run `npm run build` and commit, including the rebuilt `dist/`.
+4. Tag the commit `vX.Y.Z` and push the tag (`git push origin vX.Y.Z`).
+
+The release workflow checks that the tag matches the package version and that `dist/` is
+up to date, then publishes to npm with provenance via trusted publishing.
 
 ## License
 
