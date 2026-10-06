@@ -22,7 +22,7 @@ npm install -g https://github.com/CheckCourt/cli/archive/refs/tags/v0.1.2.tar.gz
 checkcourt help
 ```
 
-npm builds the CLI on install. A release on npm as `@checkcourt/cli` is planned.
+The release ships its compiled build, so nothing is compiled on install. A release on npm as `@checkcourt/cli` is planned.
 
 ## App development
 
