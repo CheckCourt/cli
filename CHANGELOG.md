@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- The SDK is bundled into the CLI build, so a global install from GitHub needs no git dependency (fixes failed `npm install -g github:CheckCourt/cli`).
+
 ## 0.1.1
 
 - Installing with `npm install -g github:CheckCourt/cli` works: the compiled `dist/` ships with the repository and the SDK dependency moved to v0.3.1.
