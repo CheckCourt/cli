@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Installing with `npm install -g github:CheckCourt/cli` works: the compiled `dist/` ships with the repository and the SDK dependency moved to v0.3.1.
+
 ## 0.1.0
 
 First public release.

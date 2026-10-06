@@ -25,3 +25,5 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+      - name: Committed dist matches the source
+        run: test -z "$(git status --porcelain -- dist)"

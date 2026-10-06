@@ -1,6 +1,6 @@
 {
   "name": "@checkcourt/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command line tool for the CheckCourt API and local app development",
   "private": false,
   "license": "MIT",
@@ -35,11 +35,10 @@
     "dev": "tsx src/index.ts",
     "build": "node scripts/build.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "prepare": "npm run build"
+    "test": "vitest run"
   },
   "dependencies": {
-    "@checkcourt/sdk": "github:CheckCourt/sdk#v0.3.0",
+    "@checkcourt/sdk": "github:CheckCourt/sdk#v0.3.1",
     "ink": "^6.8.0",
     "ink-text-input": "^6.0.0",
     "react": "19.2.4",
