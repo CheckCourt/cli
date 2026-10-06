@@ -1,0 +1,56 @@
+{
+  "name": "@checkcourt/cli",
+  "version": "0.1.0",
+  "description": "Command line tool for the CheckCourt API and local app development",
+  "private": false,
+  "license": "MIT",
+  "author": "CheckCourt",
+  "homepage": "https://github.com/CheckCourt/cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheckCourt/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CheckCourt/cli/issues"
+  },
+  "keywords": [
+    "checkcourt",
+    "cli",
+    "webhooks",
+    "developer-tools"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "checkcourt": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@checkcourt/sdk": "github:CheckCourt/sdk#v0.3.0",
+    "ink": "^6.8.0",
+    "ink-text-input": "^6.0.0",
+    "react": "19.2.4",
+    "ws": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.6"
+  }
+}
